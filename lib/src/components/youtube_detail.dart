@@ -86,7 +86,7 @@ class YoutubeDetail extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
       child: Text(
-        '''안녕하세요 개발하는 남자 개남입니다. 
+        '''안녕하세요 개발하는 남자 개남입니다. ㅁㄴㄹ
 
 이번영상은 지난 영상에 이어서 상세 화면을 구성하는 영상입니다.
 다음영상부터 유튜브 api 를 활용하는 것요 개발하는 남자 개남입니다. 
