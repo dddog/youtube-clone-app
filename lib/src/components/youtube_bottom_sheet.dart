@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:logger/logger.dart';
 
 class YoutubeBottomSheet extends StatelessWidget {
-  YoutubeBottomSheet({Key? key}) : super(key: key);
+  const YoutubeBottomSheet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.only(
-        topLeft: const Radius.circular(20),
+        topLeft: Radius.circular(20),
         topRight: Radius.circular(20),
       ),
       child: Container(
@@ -47,15 +48,17 @@ class YoutubeBottomSheet extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text(
+        Text(
           '만들기',
           style: TextStyle(
             fontSize: 16,
           ),
         ),
         IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.close),
+          onPressed: () {
+            Get.back();
+          },
+          icon: Icon(Icons.close),
         ),
       ],
     );
@@ -78,7 +81,7 @@ class YoutubeBottomSheet extends StatelessWidget {
               color: Colors.grey.withOpacity(0.3),
             ),
             child: Center(
-              child: Container(
+              child: SizedBox(
                 width: iconSize,
                 height: iconSize,
                 child: SvgPicture.asset('assets/svg/icons/$icon'),

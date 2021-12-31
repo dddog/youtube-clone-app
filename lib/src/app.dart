@@ -62,7 +62,7 @@ class App extends GetView<AppController> {
             ),
             BottomNavigationBarItem(
               icon: Padding(
-                padding: const EdgeInsets.only(top: 8.0),
+                padding: EdgeInsets.only(top: 8.0),
                 child: SvgPicture.asset(
                   "assets/svg/icons/plus.svg",
                   width: 35,
